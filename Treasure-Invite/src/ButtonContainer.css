@@ -1,0 +1,36 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.yes-button {
+    background-color: rgb(128, 229, 128);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 18px;
+}
+
+.no-button {
+    background-color: rgb(220, 87, 87);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        /* Stack buttons vertically */
+        align-items: center;
+        /* Center buttons horizontally */
+    }
+
+    .yes-button {
+        margin-right: 0;
+        /* Remove margin to center button */
+        margin-bottom: 10px;
+        /* Add space between buttons */
+    }
+}
