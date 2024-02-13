@@ -28,7 +28,7 @@ const ButtonContainer = ({ state, setWords }) => {
     const handleClickYes = () => {
         setYesScale(1);
         state(KissingBear)
-        setWords("Yey I love you !!!!!💖💓💖💞")
+        setWords("Yey I love you !!!!!💖💓💖💞💞")
         setVisible(false)
     };
 
