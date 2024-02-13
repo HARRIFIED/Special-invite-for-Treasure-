@@ -32,13 +32,13 @@ const ButtonContainer = ({ state, setWords }) => {
         setVisible(false)
     };
 
-    const dynamicMargin = `${yesScale * 10}px`;
+    const dynamicMargin = `${yesScale * 20}px`;
 
     return (
         <div className="button-container">
             {visible && (
                 <>
-                    <button className="yes-button" style={{ transform: `scale(${yesScale})`, marginRight: dynamicMargin }} onClick={handleClickYes}>Yes</button>
+                    <button className="yes-button" style={{ transform: `scale(${yesScale})`, margin: dynamicMargin }} onClick={handleClickYes}>Yes</button>
                     <button className="no-button" onClick={noHandleClick}>{words[currentIndex]}</button>
                 </>
             )}
