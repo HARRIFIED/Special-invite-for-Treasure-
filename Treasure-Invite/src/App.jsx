@@ -5,7 +5,7 @@ import ButtonContainer from './ButtonContainer'
 
 function App() {
   const [bear, setBear] = useState(Bear)
-  const [words, setWords] = useState("Treasure Odigie  will you be my valentine, movie night date, dinner date .....?")
+  const [words, setWords] = useState("Treasure Odigie will you be my valentine, movie night date, dinner date ....?")
 
 
   return (
