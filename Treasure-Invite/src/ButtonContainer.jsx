@@ -16,7 +16,7 @@ const ButtonContainer = ({ state, setWords }) => {
         "Think again",
         "Baby boo 😋",
         "Just think about it",
-        "If you say No I will be sad"
+        "If you say No I will be sad 😥"
     ];
 
     const noHandleClick = () => {
