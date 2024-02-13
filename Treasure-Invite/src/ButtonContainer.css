@@ -8,7 +8,7 @@
 }
 
 .yes-button {
-    background-color: rgb(128, 229, 128);
+    background-color: rgb(105, 236, 105);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -16,7 +16,7 @@
 }
 
 .no-button {
-    background-color: rgb(220, 87, 87);
+    background-color: rgb(226, 75, 75);
     color: white;
     border: none;
     padding: 10px 20px;
