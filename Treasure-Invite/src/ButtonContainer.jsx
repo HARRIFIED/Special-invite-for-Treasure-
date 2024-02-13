@@ -1,9 +1,12 @@
 import { useState } from 'react'
-import './ButtonContainer.css'; // Import CSS file for styling
+import './ButtonContainer.css';
+import KissingBear from './assets/bear-kiss-bear-kisses.gif'
 
-const ButtonContainer = () => {
+const ButtonContainer = ({ state, setWords }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [yesScale, setYesScale] = useState(1);
+    const [visible, setVisible] = useState(true)
+
     const words = [
         "No",
         "Treasure, please na 😪",
@@ -24,12 +27,21 @@ const ButtonContainer = () => {
 
     const handleClickYes = () => {
         setYesScale(1);
+        state(KissingBear)
+        setWords("Yey I love you !!!!!💖💓💖💞")
+        setVisible(false)
     };
+
+    const dynamicMargin = `${yesScale * 10}px`;
 
     return (
         <div className="button-container">
-            <button className="yes-button" style={{ transform: `scale(${yesScale})`, marginRight: '10px' }} onClick={handleClickYes}>Yes</button>
-            <button className="no-button" onClick={noHandleClick}>{words[currentIndex]}</button>
+            {visible && (
+                <>
+                    <button className="yes-button" style={{ transform: `scale(${yesScale})`, marginRight: dynamicMargin }} onClick={handleClickYes}>Yes</button>
+                    <button className="no-button" onClick={noHandleClick}>{words[currentIndex]}</button>
+                </>
+            )}
         </div>
     );
 };

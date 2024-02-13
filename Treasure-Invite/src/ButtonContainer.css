@@ -1,5 +1,9 @@
 .button-container {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4;
+    align-items: center;
     justify-content: center;
 }
 
@@ -8,7 +12,7 @@
     color: white;
     border: none;
     padding: 10px 20px;
-    margin-right: 18px;
+    border-radius: 5px;
 }
 
 .no-button {
@@ -16,21 +20,18 @@
     color: white;
     border: none;
     padding: 10px 20px;
+    border-radius: 5px;
 }
 
 /* Media query for screens smaller than 768px (typical mobile devices) */
 @media screen and (max-width: 768px) {
     .button-container {
         flex-direction: column;
-        /* Stack buttons vertically */
         align-items: center;
-        /* Center buttons horizontally */
     }
 
     .yes-button {
         margin-right: 0;
-        /* Remove margin to center button */
         margin-bottom: 10px;
-        /* Add space between buttons */
     }
 }
