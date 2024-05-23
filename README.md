@@ -16,7 +16,17 @@ This project features a funny invite or Valentine card to send to your crush. It
 ## Navigate Project directory
    
 ## Usage
-Open the index.html file in your web browser to view and customize the invite card.
+
+1. Run start script:
+   ```bash
+   npm start
+     or
+   yan start
+2. Free free to customize for your need
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## Contact
+For any inquiries, please contact the repository owner
+contact details in profile
