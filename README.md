@@ -21,7 +21,7 @@ This project features a funny invite or Valentine card to send to your crush. It
    ```bash
    npm start
      or
-   yan start
+   yarn start
 2. Free free to customize for your need
 
 ## Contributing
