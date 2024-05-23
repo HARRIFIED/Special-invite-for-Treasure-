@@ -6,7 +6,7 @@ This project features a funny invite or Valentine card to send to your crush. It
 
 - Creative and humorous design
 - Simple to customize and use
-- Includes HTML, CSS, and JavaScript components
+- Made with React Vite
 
 ## Installation
 
